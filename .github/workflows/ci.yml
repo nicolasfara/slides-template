@@ -40,6 +40,7 @@ jobs:
         with:
           root-folder: public
           config-file: config.toml
+          css-file-regex: css\\/custom-theme.*.css$
 
       - name: Deploy website
         if: ${{ github.event_name != 'pull_request' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main') }}
