@@ -35,6 +35,12 @@ jobs:
       - name: Build slides
         run: hugo --minify
 
+      - name: Transform and Inline Mermaid charts
+        uses: cric96/inline-mermaid@v1.8.1
+        with:
+          root-folder: public
+          config-file: config.toml
+
       - name: Deploy website
         if: ${{ github.event_name != 'pull_request' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main') }}
         uses: JamesIves/github-pages-deploy-action@v4.4.1

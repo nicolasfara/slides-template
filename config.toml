@@ -28,3 +28,9 @@ codeFences = false
 baseName = "index"
 mediaType = "text/html"
 isHTML = true
+
+[[params.reveal_hugo.mermaid]]
+startOnLoad = false
+theme = "default"
+fontFamily = "Inconsolata"
+useMaxWidth = false
