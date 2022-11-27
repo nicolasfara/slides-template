@@ -1,0 +1,24 @@
+<!doctype html><html lang=en><head><meta name=generator content="Hugo 0.107.0"><meta charset=utf-8><title>My presentation</title><meta name=author content="Nicolas Farabegoli"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="black-translucent"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link rel=stylesheet href=/slides-template/reveal-js/css/reset.css><link rel=stylesheet href=/slides-template/reveal-js/css/reveal.css><link rel=stylesheet href=/slides-template/css/custom-theme.min.da90c6b53a06df1df0af761ed122d4f6ff1698fcf363a8e9c46a877068f38cb7.css id=theme><link rel=stylesheet href=/slides-template/highlight-js/github-gist.min.css><link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel=stylesheet></head><body><div class=reveal><div class=slides><section><h1 id=hello-world>Hello world</h1><p>This is my first slide.</p></section><section><h1 id=cool-equations>Cool equations</h1><p>Displayed equations are wrapped in double-$</p><p>$$\frac{n!}{k!(n-k)!} = \binom{n}{k}$$</p><p>Inline equations like $E=mc^2$ are wrapped in single-$</p></section><section><h1 id=code-example>Code example</h1><pre><code class=language-kotlin>interface Foo
+
+fun printHelloWorld(): Unit {
+    val variable: String = &quot;Hello World&quot;
+    println(variable)
+}
+</code></pre><p>Scala example</p><pre><code class=language-scala>trait Monad[F[_]]
+
+def main(args: Array[String]) = {
+    println(&quot;Hello World&quot;)
+}
+</code></pre></section><section><h1 id=mermaid>Mermaid</h1><div class=mermaid>graph TD
+A[Client] --> B[Load Balancer]
+B --> C[Server01]
+B --> D[Server02]</div></section><section><h1 id=style>Style</h1><p>This is a <strong>bold</strong> text.</p><p>This is an <em>italic</em> text.</p><p>This is a <del>strikethrough</del> text.</p><p>This is a <a href=https://www.google.com>link</a>.</p></section><section><h1 id=multi-column>Multi column</h1><div class=multiCol><div class=col><p>Column 1</p></div><div class=col>Column 2</div></div></section></div></div><script type=text/javascript src=/slides-template/reveal-hugo/object-assign.js></script>
+<a href=/slides-template/reveal-js/css/print/ id=print-location style=display:none></a>
+<script type=text/javascript>var printLocationElement=document.getElementById("print-location"),link=document.createElement("link");link.rel="stylesheet",link.type="text/css",link.href=printLocationElement.href+(window.location.search.match(/print-pdf/gi)?"pdf.css":"paper.css"),document.getElementsByTagName("head")[0].appendChild(link)</script><script type=application/json id=reveal-hugo-site-params>{"custom_theme":"custom-theme.scss","custom_theme_compile":true,"custom_theme_options":{"enablesourcemap":true,"targetpath":"css/custom-theme.css"},"height":"900","highlight_theme":"github-gist","pdfseparatefragments":false,"slide_number":true,"theme":"white","width":"1440"}</script><script type=application/json id=reveal-hugo-page-params>null</script><script src=/slides-template/reveal-js/js/reveal.js></script>
+<script type=text/javascript>function camelize(e){return e&&Object.keys(e).forEach(function(t){newK=t.replace(/(_\w)/g,function(e){return e[1].toUpperCase()}),newK!=t&&(e[newK]=e[t],delete e[t])}),e}var revealHugoDefaults={center:!0,controls:!0,history:!0,progress:!0,transition:"slide"},revealHugoSiteParams=JSON.parse(document.getElementById("reveal-hugo-site-params").innerHTML),revealHugoPageParams=JSON.parse(document.getElementById("reveal-hugo-page-params").innerHTML),options=Object.assign({},camelize(revealHugoDefaults),camelize(revealHugoSiteParams),camelize(revealHugoPageParams));Reveal.initialize(options)</script><script type=text/javascript src=/slides-template/reveal-js/plugin/markdown/marked.js></script>
+<script type=text/javascript src=/slides-template/reveal-js/plugin/markdown/markdown.js></script>
+<script type=text/javascript src=/slides-template/reveal-js/plugin/highlight/highlight.js></script>
+<script type=text/javascript src=/slides-template/reveal-js/plugin/zoom-js/zoom.js></script>
+<script type=text/javascript src=/slides-template/reveal-js/plugin/notes/notes.js></script>
+<script type=text/javascript src=/slides-template/mermaid.min_6838052300336322795.js></script>
+<script type=text/javascript>mermaid.initialize({startOnLoad:!1});let render=e=>{let t=e.currentSlide.querySelectorAll(".mermaid");if(!t.length)return;t.forEach(e=>{let t=e.getAttribute("data-processed");t||mermaid.init(void 0,e)})};render({currentSlide:Reveal.getCurrentSlide()}),Reveal.addEventListener("slidechanged",render),Reveal.addEventListener("ready",render)</script><script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]]},svg:{fontCache:"global"}}</script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js></script></body></html>
